@@ -1,3 +1,4 @@
+import sys
 import json
 import numpy as np
 import matplotlib.pyplot as plt
@@ -328,9 +329,11 @@ class Satellite(Body):
 
 # Initialises simulation and runs the simulation.
 def main():
-    SIMULATION = Simulation(satellite=False)
+    satellite = True if sys.argv[1] == "--satellite" else False
+
+    SIMULATION = Simulation(satellite)
     SIMULATION.run_simulation()
     SIMULATION.graph_energy()
 
-
-main()
+if __name__ == "__main__":
+    main()
