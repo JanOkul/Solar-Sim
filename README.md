@@ -12,10 +12,8 @@ To start the simulation, simply run the `main.py` file.
 
 ### Adding a Satellite
 
-To add a satellite, you need to manually edit the argument passed to the `Simulation` class within the `main.py` file. Change it from `False` to `True`.
+To add a satellite, you need to pass in the `--satellite` argument to the `main.py` file.
 
 ### Viewing Final Energy
 
 To see the final energy of the solar system, close the simulation window. A new window will appear displaying the energy.
-
-Enjoy exploring the solar system simulation!
